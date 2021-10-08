@@ -37,7 +37,9 @@ class QuizBrain {
         do {
           incorrectPokemonName =
               pokemonList.pokemon[_getRandomPokemonIndex()].name;
-        } while (incorrectPokemonName == correctPokemonName);
+        } while (answers.contains(incorrectPokemonName) ||
+            (incorrectPokemonName == correctPokemonName));
+
         answers.add(incorrectPokemonName);
       }
     }
