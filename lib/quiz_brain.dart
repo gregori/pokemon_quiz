@@ -25,7 +25,7 @@ class QuizBrain {
     return pokemonList.pokemon[_currentPokemon].imgUrl;
   }
 
-  List<String> getPokemonNamOptions() {
+  List<String> getPokemonNameOptions() {
     String correctPokemonName = pokemonList.pokemon[_currentPokemon].name;
     List<String> answers = [];
     String incorrectPokemonName;
